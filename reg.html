@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Radhe Krishna Boys Hostel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="regForm">
+        <h2>Register Here</h2>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="aadhar" placeholder="Aadhar Number" required>
+        <input type="text" name="pan" placeholder="PAN Number" required>
+        <input type="text" name="fathersName" placeholder="Father's Name" required>
+        
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <input type="date" name="dob" placeholder="Date of Birth" required>
+        <textarea name="currentAddress" placeholder="Current Address" required></textarea>
+        <textarea name="permanentAddress" placeholder="Permanent Address" required></textarea>
+        
+        <label>Photo:</label>
+        <input type="file" name="photo" accept="image/*" required>
+        
+        <label>Signature of Student:</label>
+        <input type="file" name="studentSign" accept="image/*" required>
+        
+        <label>Signature of Parent:</label>
+        <input type="file" name="parentSign" accept="image/*" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
